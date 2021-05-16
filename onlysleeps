@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@font-face
+{
+  font-family: 'xxx';
+  src: url("Azonix.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  /*hides the scroll bar*/
+  background-color: black;
+  margin: 0;
+
+}
+
+ h1{
+  position: relative;
+  text-align: center;
+  font-family: xxx;
+  color: #fff;
+  top: 20px;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: xxx;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+.cards * {
+    box-sizing: border-box;
+}
+
+.card__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    z-index: 2;
+    border-radius: 10px 10px 0px 0px;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content{
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    padding: 15px;
+  background-color: transparent;
+
+    z-index:-1;
+}
+
+.card__content > p:first-of-type {
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    font-size: 0.6em;
+    line-height: 220%; 
+    padding-bottom: 10;
+}
+
+.card__content a{
+    font-size: 15px;
+}
+
+
+.card__link {
+    color: #64968c;
+    text-decoration: none;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+</head>
+<body>
+
+    <h1>Onlysleeps Creators</h1>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="cards">
+
+
+  <div class="card">
+    <a href="Login.html"> <img class="card__image" src="Ismail.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        Ismail Hozain
+      </p>
+      <p>
+        Rocket Man who simps for elon musk
+      </p>
+         <a href="./" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+
+  <div class="card">
+   <a href="https://www.youtube.com/watch?v=vIEU-qKsqek"> <img class="card__image" src="Miguel.png" alt=""></a>
+    <div class="card__content">
+      <p>
+        Miguel Joestar
+      </p>
+      <p>
+        Proud Citizen Of Puerto Rico. Viva Puerto Rico
+      </p>      
+         <a href="https://www.youtube.com/watch?v=vIEU-qKsqek" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+
+  <div class="card">
+     <a href="https://www.youtube.com/watch?v=n-aZBwOj94w"> <img class="card__image" src="Speedwagon.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        Robert E. O. Speedwagon
+      <p>
+        simultaneously best boy and best girl
+      </p>
+        <a href="https://www.youtube.com/watch?v=n-aZBwOj94w" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+
+   <div class="card">
+     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img class="card__image" src="Rick.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        Rick Astley
+      <p>
+        Will Never Give You Up or let you down
+      </p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+
+ <div class="card">
+    <a href="https://www.youtube.com/watch?v=GdCyUgDg4dc"> <img class="card__image" src="https://static.wikia.nocookie.net/avatar/images/c/c1/Iroh_smiling.png/revision/latest?cb=20130626131914" alt=""></a>
+    <div class="card__content">
+      <p>
+        Uncle Iroh
+      <p>
+        Got You Feeling Some Kind Of Way
+      </p>
+        <a href="https://www.youtube.com/watch?v=GdCyUgDg4dc" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href="https://www.youtube.com/watch?v=yllVeEE-zp0"> <img class="card__image" src="https://cdna.artstation.com/p/assets/images/images/031/051/894/large/matheus-izaias-handsome-squidward-avatar.jpg?1602452762" alt=""></a>
+    <div class="card__content">
+      <p>
+        Chad Squidward
+      <p>
+        This is squidward's world, and we're all living in it
+      </p>
+        <a href="https://www.youtube.com/watch?v=yllVeEE-zp0" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href=""> <img class="card__image" src="https://static.wikia.nocookie.net/disney/images/4/41/BaljeetFull.JPG/revision/latest?cb=20190722154112" alt=""></a>
+    <div class="card__content">
+      <p>
+        Baljeet
+      <p>
+        Hello, Your Computer Has Virus
+      </p>
+        <a href="" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href=""> <img class="card__image" src="https://www.nme.com/wp-content/uploads/2017/05/the-rock-1996-turtleneck.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        The Rock
+      <p>
+        Need I say more?
+      </p>
+        <a href="" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+<div class="card">
+    <a href=""> <img class="card__image" src="https://i1.wp.com/www.linuxlinks.com/wp-content/uploads/2019/05/Scratch_Cat.png?resize=600%2C450&ssl=1" alt=""></a>
+    <div class="card__content">
+      <p>
+        Scratch Cat
+      <p>
+        Begin your journey to coding
+      </p>
+        <a href="" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href=""> <img class="card__image" src="https://i.kym-cdn.com/entries/icons/facebook/000/008/567/DFHg6ZsVoAAo7Av.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        Spanish Inquisition
+      <p>
+        Nobody expects them
+      </p>
+        <a href="" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href=""> <img class="card__image" src="https://i.ytimg.com/vi/wLoRiTk-awo/maxresdefault.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        Dio Brando
+      <p>
+        Kono Dio Da
+      </p>
+        <a href="" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <a href=""> <img class="card__image" src="https://i.ytimg.com/vi/hAsZCTL__lo/maxresdefault.jpg" alt=""></a>
+    <div class="card__content">
+      <p>
+        Linus Tech Tips
+      <p>
+        He Doesn't Come In RGB
+      </p>
+        <a href="" class="card__link">Buy Subscription</a>
+    </div>
+  </div>
+
+
+
+</div>
+</body>
+</html>
