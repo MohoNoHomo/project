@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rockets</title>
+<style>
+html
+{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	
+}		
+
+section
+{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section:nth-child(odd)
+{
+	background: #ccc;
+}
+section:before
+{
+	content: attr(data-text);
+	color: #262626;
+	font-size: 8em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+ul
+{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	letter-spacing: 0;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+ul li
+{
+	list-style: none;
+}
+
+ul li a{
+
+	color: #fff;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none; 
+}
+
+#Rockets
+{
+	background-image: url(Rocket2.jpg);
+	background-size: cover;
+}
+
+
+
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#Rockets">Rockets</a></li>
+		<li><a href="#Materials">Materials</a></li>
+		<li><a href="#RocketFuel">Rocket Fuel</a></li>
+		<li><a href="#Make-A-Rocket-Shop">Make-A-Rocket-Shop</a></li>
+		<li><a href="#NASA">NASA</a></li>
+	</ul>
+	<section id = "Rockets" data-text="Rockets"></section> 
+	<section id = "Materials" data-text="Materials"></section> 
+	<section id = "RocketFuel" data-text="Rocket Fuel"></section> 
+	<section id = "Make-A-Rocket-Shop" data-text="Make-A-Rocket-Shop"></section> 
+	<section id = "NASA" data-text="NASA"></section> 
+
+</div>
+
+</body>
+</html>
