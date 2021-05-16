@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@font-face
+{
+  font-family: 'xxx';
+  src: url("Azonix.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  /*hides the scroll bar*/
+  background-color: black;
+  margin: 0;
+
+}
+
+ h1{
+  position: relative;
+  text-align: center;
+  font-family: xxx;
+  color: #fff;
+  top: 20px;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cards {
+    margin: 0 auto;
+    max-width: 100%;
+    gap: 20px;
+    font-family: xxx;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+
+
+.card__content{
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    padding: 25px;
+  background-color: transparent;
+}
+.card__content p{
+  padding-bottom: 20px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+    <h1>The Quotes Of Computer Science</h1>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="cards">
+
+
+
+  <div class="card">
+    <div class="card__content">
+        <p>
+        " I like rockets because I can smack 'em "
+        <p>
+        " This is squidward's world, and we're all living in it "
+        <p>
+        " I will raise an army of trees to take over Mongolia "
+        <p> 
+        " Killing someone during the SAT is the best time to kill someone. You get to kill someone, and you get the max scores! "
+        <p> 
+        " Miguel is rated E for Everyone "
+        <p> 
+        " Why waste your time being emotional, when you could build rockets "
+        <p> 
+        " What if we made a rocket that ran on water "
+        <p> 
+        " What if we attach rocket engines to a school, and made it fly to us? "
+        <p> 
+        " What if there was a school in space, where the only way for you to enroll into it is if you built a rocket to get there? "
+      </p>
+    </div>
+  </div>
+
+
+</div>
+</body>
+</html>
