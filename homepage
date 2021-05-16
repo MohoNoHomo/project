@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+@font-face
+{
+  font-family: 'xxx';
+  src: url("Azonix.otf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+body {
+  /*hides the scroll bar*/
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  /*does something idk*/
+  overflow: hidden;
+  /*background color*/
+}
+
+/* Style the top navigation bar  links */
+.topnav a {
+  /*displays the menu bar links to the right*/
+  float: right;
+  /*displays the menu bar links*/
+  display: block;
+  /*menu bar links color without hover*/
+  color: #f2f2f2;
+  font-size: 20px; 
+  text-align: center;
+  /*spacing between the menu bar links*/
+  padding: 24px 35px;
+  /*menu bar links font*/
+  font-family: xxx;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  /*makes the text in menu bar change color*/
+  background-color: #ddd;
+  /*changes color of box around menu bar link texts*/
+  color: black;
+  /*the radius of the box surrounding menu bar link texts*/
+  border-radius: 10px 10px 10px 10px;
+}
+
+.topnav b{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 24px 25px;
+  font-family: xxx;
+  font-size: 20px; 
+  text-decoration: none;
+}
+.video-background
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-height: 100%
+  min-width: 100%
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.welcome {
+  position: relative;
+  text-align: center;
+  font-family: xxx;
+  color: #fff;
+  top: 150px;
+}
+
+.welcome h1{
+  font-size: 80px;
+  font-weight: 100;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+.btn
+{
+  font-size: 20px;
+  color: #fff;
+  margin: 5px;
+  padding: 7px 22px;
+  text-decoration: none;
+  border: 1px solid purple;
+  border-radius: 25px;
+}
+
+.btn-project:hover{
+  background-color: purple;
+  transition: .5s;
+
+
+}
+.btn-learn:hover{
+  background-color: purple;
+  transition: .5s;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <b>OnlySleeps </b>
+  <a href="Login.html">Login</a>
+  <a href="Shop.html">Shop</a>
+</div>
+
+
+<div class="welcome">
+  <h1>Welcome</h1>
+  <a href = "Movie.html" class="btn btn-project">Creators</a>
+  <a href = "Quotes.html"class="btn btn-learn">Quotes</a>
+</div>
+
+
+  
+<section class = "header">
+    <video autoplay loop class="video-background" muted plays-inline width=100% height=99%>
+      <source src="grid.mp4" type="video/mp4">
+    </video>
+</section>
+
+</html>
